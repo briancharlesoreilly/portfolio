@@ -1,0 +1,33 @@
+header {
+  background-image: url(../assets/images/brian-header.jpg);
+  background-color: $primary;
+  max-width: 1800px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.wrapper.header-flex {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid red;
+
+  p, h1 {
+    color: $primary;
+    }
+
+  .header-left-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+
+    p, h1 {
+      text-transform: uppercase;
+    }
+  }
+}
+
