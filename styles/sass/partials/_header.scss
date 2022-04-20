@@ -10,11 +10,11 @@ header {
   margin: 0 auto;
 }
 
-.wrapper.header-flex {
+.header-flex {
   display: flex;
-  flex-direction: column;
-  width: 50%;
-  border: 1px solid red;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 
   p, h1 {
     color: $primary;
@@ -22,12 +22,23 @@ header {
 
   .header-left-box {
     display: flex;
+    width: 50%;
     flex-direction: column;
     border: 1px solid red;
+
+    .job-title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
 
     p, h1 {
       text-transform: uppercase;
     }
+  }
+
+  .header-right-box {
+    width: 40%;
+    border: 1px solid olivedrab;
   }
 }
 

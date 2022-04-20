@@ -240,6 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-size: 6rem;
   font-weight: 700;
 }
 
@@ -275,6 +276,10 @@ p {
   margin: 0 auto;
 }
 
+.nav-bar {
+  display: none;
+}
+
 header {
   background-image: url(../assets/images/brian-header.jpg);
   background-color: #222a35;
@@ -287,30 +292,40 @@ header {
   margin: 0 auto;
 }
 
-.wrapper.header-flex {
+.header-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-  border: 1px solid red;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.wrapper.header-flex p, .wrapper.header-flex h1 {
+.header-flex p, .header-flex h1 {
   color: #222a35;
 }
-.wrapper.header-flex .header-left-box {
+.header-flex .header-left-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid red;
 }
-.wrapper.header-flex .header-left-box p, .wrapper.header-flex .header-left-box h1 {
+.header-flex .header-left-box .job-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.header-flex .header-left-box p, .header-flex .header-left-box h1 {
   text-transform: uppercase;
+}
+.header-flex .header-right-box {
+  width: 40%;
+  border: 1px solid olivedrab;
 }
