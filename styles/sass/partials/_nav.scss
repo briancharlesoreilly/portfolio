@@ -10,8 +10,7 @@
 
     &:hover,
     &:focus {
-      text-decoration: underline;
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: $secondary-accent;
       border-radius: 10px;
     }
   }

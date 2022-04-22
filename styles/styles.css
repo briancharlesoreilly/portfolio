@@ -234,7 +234,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Sorts Mill Goudy";
   font-weight: 400;
-  color: #ffffff;
+  color: #ececec;
   margin: 0;
   padding: 0;
 }
@@ -245,11 +245,13 @@ h1 {
 }
 
 h2 {
-  font-size: 7rem;
+  font-size: 9rem;
 }
 
 p {
-  color: #ffffff;
+  color: #ececec;
+  font-family: "Rubik";
+  line-height: 1.6;
 }
 
 body {
@@ -280,6 +282,11 @@ p {
   margin: 0 auto;
 }
 
+.fa-brands {
+  color: #ececec;
+  font-size: 4rem;
+}
+
 .nav-bar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,8 +299,7 @@ p {
   padding: 15px 0;
 }
 .nav-bar li:hover, .nav-bar li:focus {
-  text-decoration: underline;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #FFD9DA;
   border-radius: 10px;
 }
 .nav-bar a {
@@ -361,7 +367,8 @@ header {
 }
 
 .about h2 {
-  margin: 50px 0;
+  margin: 100px 0 50px 0;
+  color: #ececec;
 }
 
 .about-flex {
@@ -372,7 +379,9 @@ header {
   width: 80%;
 }
 .about-flex .about-left-box {
-  padding: 50px;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,14 +389,45 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-right: 1px solid #FFD9DA;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #FFD9DA;
+  border-radius: 20px;
+}
+.about-flex .about-left-box .about-box1,
+.about-flex .about-left-box .about-box2,
+.about-flex .about-left-box .about-box3 {
+  padding: 5px;
+}
+.about-flex .about-left-box .about-box1:hover, .about-flex .about-left-box .about-box1:focus,
+.about-flex .about-left-box .about-box2:hover,
+.about-flex .about-left-box .about-box2:focus,
+.about-flex .about-left-box .about-box3:hover,
+.about-flex .about-left-box .about-box3:focus {
+  background-color: #222a35;
+  cursor: pointer;
+}
+.about-flex .about-left-box .about-box1:hover i, .about-flex .about-left-box .about-box1:hover p, .about-flex .about-left-box .about-box1:focus i, .about-flex .about-left-box .about-box1:focus p,
+.about-flex .about-left-box .about-box2:hover i,
+.about-flex .about-left-box .about-box2:hover p,
+.about-flex .about-left-box .about-box2:focus i,
+.about-flex .about-left-box .about-box2:focus p,
+.about-flex .about-left-box .about-box3:hover i,
+.about-flex .about-left-box .about-box3:hover p,
+.about-flex .about-left-box .about-box3:focus i,
+.about-flex .about-left-box .about-box3:focus p {
+  color: #FFD9DA;
+}
+.about-flex .about-left-box i, .about-flex .about-left-box p {
+  color: #222a35;
+}
+.about-flex .about-left-box p {
+  font-weight: 700;
+  padding: 10px 0 0 0;
 }
 .about-flex .about-right-box {
+  width: 80%;
   padding: 50px;
-  border: 3px solid pink;
 }
 .about-flex .about-right-box .about-bio p:nth-child(3) {
   padding: 40px 0;
@@ -395,11 +435,13 @@ header {
 .about-flex .about-right-box .bold-bio {
   font-weight: 700;
   padding-bottom: 40px;
+  color: #FFD9DA;
 }
 .about-flex .about-right-box .signature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 40px 0;
 }
 .about-flex .about-right-box .signature img {
   width: 30%;

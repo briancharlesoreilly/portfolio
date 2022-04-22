@@ -3,7 +3,8 @@
 // *******************
 .about {
   h2 {
-    margin: 50px 0;
+    margin: 100px 0 50px 0;
+    color: $primary-text;
   }
 }
 
@@ -13,16 +14,44 @@
   width: 80%;
 
   .about-left-box {
-    padding: 50px;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border-right: 1px solid $secondary-accent;
+    justify-content: space-around;
+    background-color: $secondary-accent;
+    border-radius: 20px;
+
+    .about-box1,
+    .about-box2,
+    .about-box3 {
+      padding: 5px;
+
+      &:hover,
+      &:focus {
+        background-color: $primary;
+        cursor: pointer;
+
+        i, p {
+          color: $secondary-accent;
+        }
+      }
+    }
+
+    i, p {
+      color: $primary;
+    }
+
+    p {
+      font-weight: 700;
+      padding: 10px 0 0 0;
+    }
   }
 
   .about-right-box {
+    width: 80%;
     padding: 50px;
-    border: 3px solid pink;
 
     .about-bio {
       p:nth-child(3) {
@@ -33,10 +62,12 @@
     .bold-bio {
       font-weight: 700;
       padding-bottom: 40px;
+      color: $secondary-accent;
     }
 
     .signature {
       display: flex;
+      margin: 40px 0;
 
       img {
         width: 30%;

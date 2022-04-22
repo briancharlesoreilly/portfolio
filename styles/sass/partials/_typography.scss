@@ -36,10 +36,12 @@ h1 {
 }
 
 h2 {
-  font-size: 7rem;
+  font-size: 9rem;
 }
 
 // body and section text
 p {
   color: $primary-text;
+  font-family: $body-font;
+  line-height: 1.6;
 }
