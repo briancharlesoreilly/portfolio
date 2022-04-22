@@ -240,8 +240,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 7rem;
 }
 
 p {
@@ -276,8 +280,32 @@ p {
   margin: 0 auto;
 }
 
-.nav-bar {
-  display: none;
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav-bar li {
+  padding: 15px 0;
+}
+.nav-bar li:hover, .nav-bar li:focus {
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.nav-bar a {
+  padding: 5px;
+  text-decoration: none;
+  color: #222a35;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Rubik";
+}
+.nav-bar a:focus {
+  outline: 1px solid black;
 }
 
 header {
@@ -297,6 +325,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 100vh;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -311,21 +340,67 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 40%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid red;
 }
 .header-flex .header-left-box .job-title {
+  width: 80%;
   font-size: 2rem;
   font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 3px solid #222a35;
 }
 .header-flex .header-left-box p, .header-flex .header-left-box h1 {
   text-transform: uppercase;
 }
-.header-flex .header-right-box {
-  width: 40%;
-  border: 1px solid olivedrab;
+.header-flex .header-left-box h1 {
+  padding: 10px 0;
+}
+
+.about h2 {
+  margin: 50px 0;
+}
+
+.about-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+.about-flex .about-left-box {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 1px solid #FFD9DA;
+}
+.about-flex .about-right-box {
+  padding: 50px;
+  border: 3px solid pink;
+}
+.about-flex .about-right-box .about-bio p:nth-child(3) {
+  padding: 40px 0;
+}
+.about-flex .about-right-box .bold-bio {
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+.about-flex .about-right-box .signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-flex .about-right-box .signature img {
+  width: 30%;
 }
