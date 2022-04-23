@@ -12,11 +12,32 @@ p {margin: 0; padding: 0}
 }
 
 // social media icons
-.fa-brands {
+.fa-brands,
+.fa-solid {
   color: $primary-text;
   font-size: 4rem;
 }
 
 // buttons
+button {
+  padding: 13px 40px 10px 40px;
+  border: 1px solid $secondary-accent;
+  border-radius: 5px;
+  background-color: $primary;
+  color: $primary-text;
+  font-family: $heading-font;
+  font-size: 2rem;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-accent;
+    color: $primary;
+  }
+
+  &:active {
+    background-color: $primary;
+    color: $secondary-accent;
+  }
+}
 
 // forms

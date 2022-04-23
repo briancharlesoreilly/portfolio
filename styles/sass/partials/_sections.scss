@@ -1,5 +1,5 @@
 // *******************
-//     ABOUT ME
+//  ABOUT ME & SKILLS
 // *******************
 .about {
   h2 {
@@ -8,12 +8,14 @@
   }
 }
 
-.about-flex {
+.about-flex,
+.skills-flex {
   display: flex;
   margin: 0 auto;
   width: 80%;
 
-  .about-left-box {
+  .about-left-box,
+  .skills-left-box {
     width: 20%;
     text-align: center;
     margin-bottom: 100px;
@@ -23,9 +25,8 @@
     background-color: $secondary-accent;
     border-radius: 20px;
 
-    .about-box1,
-    .about-box2,
-    .about-box3 {
+    .about-box,
+    .skills-box {
       padding: 5px;
 
       &:hover,
@@ -49,9 +50,10 @@
     }
   }
 
-  .about-right-box {
+  .about-right-box,
+  .skills-right-box {
     width: 80%;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
 
     .about-bio {
       p:nth-child(3) {
@@ -59,7 +61,11 @@
       }
     }
 
-    .bold-bio {
+    .bold-bio,
+    .bold-skills-bio {
+      font-family: $heading-font;
+      font-size: 2rem;
+      line-height: 1.25;
       font-weight: 700;
       padding-bottom: 40px;
       color: $secondary-accent;
@@ -67,7 +73,7 @@
 
     .signature {
       display: flex;
-      margin: 40px 0;
+      margin: 30px 0;
 
       img {
         width: 30%;
@@ -75,16 +81,80 @@
     }
   }
 }
+// *******************
+//      ABOUT
+// *******************
+.atoms {
+  background-color: $secondary-accent;
+  color: $primary;
+  padding: 0 5px;
+  margin: 0 2px;
+  text-decoration: none;
 
+  &:hover,
+  &:focus {
+    outline: 1px solid $secondary-accent;
+    background-color: $primary;
+    color: $primary-text;
 
+  }
+}
 // *******************
 //      SKILLS
 // *******************
+.skills {
+  background-color: $secondary;
+  h2 {
+    padding: 150px 0 50px 0;
+  }
 
+  .skills-flex {
+    .skills-box {
+      &:hover,
+      &:focus {
+        background-color: $secondary;
+      }
+    }
+  }
+
+  button {
+    margin-top: 40px;
+    background-color: $secondary;
+
+    &:hover,
+    &:focus {
+      background-color: $secondary-accent;
+      color: $secondary;
+    }
+  }
+}
 // *******************
 //      PROJECTS
 // *******************
+.projects {
+  background-color: $primary;
 
+  .projects-flex {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+
+    .projects-right-box {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+    }
+
+    .projects-left-box {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      justify-content: space-between;
+
+    }
+  }
+
+}
 // *******************
 //      CONTACT ME
 // *******************

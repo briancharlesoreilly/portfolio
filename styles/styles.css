@@ -282,9 +282,28 @@ p {
   margin: 0 auto;
 }
 
-.fa-brands {
+.fa-brands,
+.fa-solid {
   color: #ececec;
   font-size: 4rem;
+}
+
+button {
+  padding: 13px 40px 10px 40px;
+  border: 1px solid #FFD9DA;
+  border-radius: 5px;
+  background-color: #222a35;
+  color: #ececec;
+  font-family: "Sorts Mill Goudy";
+  font-size: 2rem;
+}
+button:hover, button:focus {
+  background-color: #FFD9DA;
+  color: #222a35;
+}
+button:active {
+  background-color: #222a35;
+  color: #FFD9DA;
 }
 
 .nav-bar ul {
@@ -371,14 +390,18 @@ header {
   color: #ececec;
 }
 
-.about-flex {
+.about-flex,
+.skills-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   width: 80%;
 }
-.about-flex .about-left-box {
+.about-flex .about-left-box,
+.about-flex .skills-left-box,
+.skills-flex .about-left-box,
+.skills-flex .skills-left-box {
   width: 20%;
   text-align: center;
   margin-bottom: 100px;
@@ -394,55 +417,186 @@ header {
   background-color: #FFD9DA;
   border-radius: 20px;
 }
-.about-flex .about-left-box .about-box1,
-.about-flex .about-left-box .about-box2,
-.about-flex .about-left-box .about-box3 {
+.about-flex .about-left-box .about-box,
+.about-flex .about-left-box .skills-box,
+.about-flex .skills-left-box .about-box,
+.about-flex .skills-left-box .skills-box,
+.skills-flex .about-left-box .about-box,
+.skills-flex .about-left-box .skills-box,
+.skills-flex .skills-left-box .about-box,
+.skills-flex .skills-left-box .skills-box {
   padding: 5px;
 }
-.about-flex .about-left-box .about-box1:hover, .about-flex .about-left-box .about-box1:focus,
-.about-flex .about-left-box .about-box2:hover,
-.about-flex .about-left-box .about-box2:focus,
-.about-flex .about-left-box .about-box3:hover,
-.about-flex .about-left-box .about-box3:focus {
+.about-flex .about-left-box .about-box:hover, .about-flex .about-left-box .about-box:focus,
+.about-flex .about-left-box .skills-box:hover,
+.about-flex .about-left-box .skills-box:focus,
+.about-flex .skills-left-box .about-box:hover,
+.about-flex .skills-left-box .about-box:focus,
+.about-flex .skills-left-box .skills-box:hover,
+.about-flex .skills-left-box .skills-box:focus,
+.skills-flex .about-left-box .about-box:hover,
+.skills-flex .about-left-box .about-box:focus,
+.skills-flex .about-left-box .skills-box:hover,
+.skills-flex .about-left-box .skills-box:focus,
+.skills-flex .skills-left-box .about-box:hover,
+.skills-flex .skills-left-box .about-box:focus,
+.skills-flex .skills-left-box .skills-box:hover,
+.skills-flex .skills-left-box .skills-box:focus {
   background-color: #222a35;
   cursor: pointer;
 }
-.about-flex .about-left-box .about-box1:hover i, .about-flex .about-left-box .about-box1:hover p, .about-flex .about-left-box .about-box1:focus i, .about-flex .about-left-box .about-box1:focus p,
-.about-flex .about-left-box .about-box2:hover i,
-.about-flex .about-left-box .about-box2:hover p,
-.about-flex .about-left-box .about-box2:focus i,
-.about-flex .about-left-box .about-box2:focus p,
-.about-flex .about-left-box .about-box3:hover i,
-.about-flex .about-left-box .about-box3:hover p,
-.about-flex .about-left-box .about-box3:focus i,
-.about-flex .about-left-box .about-box3:focus p {
+.about-flex .about-left-box .about-box:hover i, .about-flex .about-left-box .about-box:hover p, .about-flex .about-left-box .about-box:focus i, .about-flex .about-left-box .about-box:focus p,
+.about-flex .about-left-box .skills-box:hover i,
+.about-flex .about-left-box .skills-box:hover p,
+.about-flex .about-left-box .skills-box:focus i,
+.about-flex .about-left-box .skills-box:focus p,
+.about-flex .skills-left-box .about-box:hover i,
+.about-flex .skills-left-box .about-box:hover p,
+.about-flex .skills-left-box .about-box:focus i,
+.about-flex .skills-left-box .about-box:focus p,
+.about-flex .skills-left-box .skills-box:hover i,
+.about-flex .skills-left-box .skills-box:hover p,
+.about-flex .skills-left-box .skills-box:focus i,
+.about-flex .skills-left-box .skills-box:focus p,
+.skills-flex .about-left-box .about-box:hover i,
+.skills-flex .about-left-box .about-box:hover p,
+.skills-flex .about-left-box .about-box:focus i,
+.skills-flex .about-left-box .about-box:focus p,
+.skills-flex .about-left-box .skills-box:hover i,
+.skills-flex .about-left-box .skills-box:hover p,
+.skills-flex .about-left-box .skills-box:focus i,
+.skills-flex .about-left-box .skills-box:focus p,
+.skills-flex .skills-left-box .about-box:hover i,
+.skills-flex .skills-left-box .about-box:hover p,
+.skills-flex .skills-left-box .about-box:focus i,
+.skills-flex .skills-left-box .about-box:focus p,
+.skills-flex .skills-left-box .skills-box:hover i,
+.skills-flex .skills-left-box .skills-box:hover p,
+.skills-flex .skills-left-box .skills-box:focus i,
+.skills-flex .skills-left-box .skills-box:focus p {
   color: #FFD9DA;
 }
-.about-flex .about-left-box i, .about-flex .about-left-box p {
+.about-flex .about-left-box i, .about-flex .about-left-box p,
+.about-flex .skills-left-box i,
+.about-flex .skills-left-box p,
+.skills-flex .about-left-box i,
+.skills-flex .about-left-box p,
+.skills-flex .skills-left-box i,
+.skills-flex .skills-left-box p {
   color: #222a35;
 }
-.about-flex .about-left-box p {
+.about-flex .about-left-box p,
+.about-flex .skills-left-box p,
+.skills-flex .about-left-box p,
+.skills-flex .skills-left-box p {
   font-weight: 700;
   padding: 10px 0 0 0;
 }
-.about-flex .about-right-box {
+.about-flex .about-right-box,
+.about-flex .skills-right-box,
+.skills-flex .about-right-box,
+.skills-flex .skills-right-box {
   width: 80%;
-  padding: 50px;
+  padding: 0 50px 50px 50px;
 }
-.about-flex .about-right-box .about-bio p:nth-child(3) {
+.about-flex .about-right-box .about-bio p:nth-child(3),
+.about-flex .skills-right-box .about-bio p:nth-child(3),
+.skills-flex .about-right-box .about-bio p:nth-child(3),
+.skills-flex .skills-right-box .about-bio p:nth-child(3) {
   padding: 40px 0;
 }
-.about-flex .about-right-box .bold-bio {
+.about-flex .about-right-box .bold-bio,
+.about-flex .about-right-box .bold-skills-bio,
+.about-flex .skills-right-box .bold-bio,
+.about-flex .skills-right-box .bold-skills-bio,
+.skills-flex .about-right-box .bold-bio,
+.skills-flex .about-right-box .bold-skills-bio,
+.skills-flex .skills-right-box .bold-bio,
+.skills-flex .skills-right-box .bold-skills-bio {
+  font-family: "Sorts Mill Goudy";
+  font-size: 2rem;
+  line-height: 1.25;
   font-weight: 700;
   padding-bottom: 40px;
   color: #FFD9DA;
 }
-.about-flex .about-right-box .signature {
+.about-flex .about-right-box .signature,
+.about-flex .skills-right-box .signature,
+.skills-flex .about-right-box .signature,
+.skills-flex .skills-right-box .signature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 40px 0;
+  margin: 30px 0;
 }
-.about-flex .about-right-box .signature img {
+.about-flex .about-right-box .signature img,
+.about-flex .skills-right-box .signature img,
+.skills-flex .about-right-box .signature img,
+.skills-flex .skills-right-box .signature img {
   width: 30%;
+}
+
+.atoms {
+  background-color: #FFD9DA;
+  color: #222a35;
+  padding: 0 5px;
+  margin: 0 2px;
+  text-decoration: none;
+}
+.atoms:hover, .atoms:focus {
+  outline: 1px solid #FFD9DA;
+  background-color: #222a35;
+  color: #ececec;
+}
+
+.skills {
+  background-color: #171e28;
+}
+.skills h2 {
+  padding: 150px 0 50px 0;
+}
+.skills .skills-flex .skills-box:hover, .skills .skills-flex .skills-box:focus {
+  background-color: #171e28;
+}
+.skills button {
+  margin-top: 40px;
+  background-color: #171e28;
+}
+.skills button:hover, .skills button:focus {
+  background-color: #FFD9DA;
+  color: #171e28;
+}
+
+.projects {
+  background-color: #222a35;
+}
+.projects .projects-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+.projects .projects-flex .projects-right-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+}
+.projects .projects-flex .projects-left-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
