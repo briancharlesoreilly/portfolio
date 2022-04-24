@@ -55,16 +55,22 @@
         <div class="about-flex">
           <ul class="about-left-box">
             <li class="about-box">
-              <i class="fa-brands fa-linkedin-in"></i>
-              <p>Linked In</p>
+              <a href="https://www.linkedin.com/in/brian-charles-oreilly/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <p>Linked In</p>
+              </a>
             </li>
             <li class="about-box">
-              <i class="fa-brands fa-github"></i>
-              <p>Git Hub</p>
+              <a href="https://github.com/briancharlesoreilly" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                <p>Git Hub</p>
+              </a>
             </li>
             <li class="about-box">
-              <i class="fa-brands fa-twitter"></i>
-              <p>Twitter</p>
+              <a href="https://twitter.com/quitenice_" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+                <p>Twitter</p>
+              </a>
             </li>
           </ul>
 
@@ -162,47 +168,72 @@
 
     <section class="projects" id="projects"> <!-- projects START -->
       <div class="wrapper">
-        <h2>Skills & Experience</h2>
+        <h2>Projects</h2>
         <div class="projects-flex">
-          <ul class="projects-left-box">
+          <div class="projects-top-box">
+            <div class="projects-bio">
+              <h3 class="bold-projects-bio">A small collection of some projects I've worked on, fully interactive for your viewing pleasure. </h3> 
+            </div>
+          </div>
+          <ul class="projects-bottom-box">
             <li class="projects-box">
               <img src="./assets/images/planted-screenshot.jpg" alt="screenshot of a website about plants">
-              <h4>Planted!</h4>
-              <p>A cool site about plants</p>
+              <div class="projects-box-text">
+                <h4>Planted!</h4>
+                <p>A cool site about plants</p>
+              </div>
             </li>
             <li class="projects-box">
               <img src="./assets/images/e-commerce-screenshot.jpg" alt="screenshot of an e-commerce website">
-              <h4>Toys E-Commerce</h4>
-              <p>An E-commerce website for a fictional toy company.</p>
+              <div class="projects-box-text">
+                <h4>Toys E-Commerce</h4>
+                <p>An E-commerce website for a fictional toy company.</p>
+              </div>
             </li>
             <li class="projects-box">
               <img src="./assets/images/quitenice-screenshot.jpg" alt="a screenshot of a website for the band 'Quite Nice'">
-              <h4>Quite Nice</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+              <div class="projects-box-text">
+                <h4>Quite Nice</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+              </div>
             </li>
           </ul>
-
-          <div class="projects-right-box">
-            <div class="projects-bio">
-              <h3 class="bold-projects-bio">A small collection of some projects I've worked on, fully interactive for your viewing pleasure. </h3> 
-              <p>Bar Manager | Owner</p>
-              <p>Northern Belle, 2015-2021</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illum exercitationem totam vero qui ab? Possimus doloremque cumque impedit amet.</p>
-              <h3>Cabinet Maker | Furniture Designer</h3>
-              <p>Son of a Woodcutter, 2016-2018</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptates veritatis mollitia? Iusto et minima, repudiandae laboriosam vitae facilis alias?.</p>
-              <h3>Bar & Cafe Manager</h3>
-              <p>Northwood, 2013-2016</p>
-              <p></p>
-            </div>
-            <div class="skills-button">
-              <label for="skills-button"></label>
-              <button id="skills-button">View Resume</button>
-            </div>
-          </div>
-        </div> <!-- here -->
+        </div> 
       </div>
     </section> <!-- projects END -->
+
+    <section class="contact" id="contact">
+      <div class="wrapper">
+        <h2>Contact Me</h2>
+        <di class="contact-flex">
+          <div class="map">
+            <!-- insert google maps here -->
+          </div>
+          <form action=""> <!-- form START --> 
+            <ul class="flex-form">
+              <li>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Your Name">
+              </li>
+
+              <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+              </li>
+
+              <li>
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"></textarea>
+              </li>
+
+              <li>
+                <button type="submit">Submit</button>
+              </li>
+            </ul>
+          </form> <!-- form START --> 
+        </div>
+      </div>
+    </section>
   </main> <!-- main END -->
   
 

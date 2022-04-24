@@ -536,6 +536,10 @@ header {
   width: 30%;
 }
 
+.about-box a {
+  text-decoration: none;
+}
+
 .atoms {
   background-color: #FFD9DA;
   color: #222a35;
@@ -553,7 +557,7 @@ header {
   background-color: #171e28;
 }
 .skills h2 {
-  padding: 150px 0 50px 0;
+  padding: 100px 0 50px 0;
 }
 .skills .skills-flex .skills-box:hover, .skills .skills-flex .skills-box:focus {
   background-color: #171e28;
@@ -570,14 +574,28 @@ header {
 .projects {
   background-color: #222a35;
 }
+.projects .bold-projects-bio {
+  font-family: "Sorts Mill Goudy";
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #FFD9DA;
+}
+.projects h2 {
+  padding: 100px 0 50px 0;
+}
 .projects .projects-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   width: 80%;
 }
-.projects .projects-flex .projects-right-box {
+.projects .projects-flex .projects-top-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,9 +603,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20%;
 }
-.projects .projects-flex .projects-left-box {
+.projects .projects-flex .projects-bottom-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,8 +612,43 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.projects .projects-flex .projects-bottom-box .projects-box {
+  margin: 40px 0;
+}
+.projects .projects-flex .projects-bottom-box li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .projects-flex .projects-bottom-box li .projects-box-text {
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+.projects .projects-flex .projects-bottom-box li .projects-box-text h4 {
+  font-family: "Sorts Mill Goudy";
+  color: #FFD9DA;
+  font-size: 3rem;
+}
+.projects .projects-flex .projects-bottom-box li img {
+  width: 70%;
+}
+
+.contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact-flex .flex-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

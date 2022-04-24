@@ -84,6 +84,12 @@
 // *******************
 //      ABOUT
 // *******************
+.about-box {
+  a {
+    text-decoration: none;
+  }
+}
+
 .atoms {
   background-color: $secondary-accent;
   color: $primary;
@@ -96,7 +102,6 @@
     outline: 1px solid $secondary-accent;
     background-color: $primary;
     color: $primary-text;
-
   }
 }
 // *******************
@@ -105,7 +110,7 @@
 .skills {
   background-color: $secondary;
   h2 {
-    padding: 150px 0 50px 0;
+    padding: 100px 0 50px 0;
   }
 
   .skills-flex {
@@ -134,27 +139,68 @@
 .projects {
   background-color: $primary;
 
+  .bold-projects-bio {
+    font-family: $heading-font;
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: 700;
+    color: $secondary-accent;
+  }
+
+  h2 {
+    padding: 100px 0 50px 0;
+  }
+
   .projects-flex {
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 80%;
 
-    .projects-right-box {
+    .projects-top-box {
       display: flex;
       flex-direction: column;
-      width: 20%;
     }
 
-    .projects-left-box {
+    .projects-bottom-box {
       display: flex;
       flex-direction: column;
-      width: 80%;
       justify-content: space-between;
 
+      .projects-box {
+        margin: 40px 0;
+      }
+
+      li {
+        display: flex;
+
+        .projects-box-text {
+          width: 25%;
+          text-align: center;
+          margin: auto;
+
+          h4 {
+            font-family: $heading-font;
+            color: $secondary-accent;
+            font-size: 3rem;
+          }
+        }
+
+        img {
+          width: 70%;
+        }
+      }
     }
   }
-
 }
 // *******************
 //      CONTACT ME
 // *******************
+.contact-flex {
+  display: flex;
+
+  .flex-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
