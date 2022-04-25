@@ -784,7 +784,7 @@ footer p {
 
 @media (max-width: 1024px) {
   html, body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   header .header-flex {
@@ -862,6 +862,10 @@ footer p {
     padding: 10px;
   }
   .about-flex .about-right-box .bio-button button {
+    width: 100%;
+  }
+
+  .projects .projects-flex {
     width: 100%;
   }
 }

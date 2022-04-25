@@ -5,7 +5,7 @@
 
 // overflow issue fix on mobile
   html, body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
 // ***** Header *****
@@ -42,17 +42,12 @@
     width: 100%;
   }
 
-// ***** Skills *****
-// ******************
-
 // **** Projects ****
 // ******************
   .projects-flex {
     width: 100%;
   }
-
 }
-
 
 // *******************
 //     LARGE MOBILE
@@ -117,11 +112,14 @@
     }
   }
 
-// ***** Skills *****
-// ******************
-
 // **** Projects ****
 // ******************
+  .projects {
+    .projects-flex {
+      width: 100%;
+    }
+
+  }
 
 // **** Contact *****
 // ******************
@@ -134,7 +132,7 @@
 //     SMALL MOBILE
 // *******************
 @media (max-width: 450px) {
-  
+
 // ***** Skills *****
 // ******************
 
