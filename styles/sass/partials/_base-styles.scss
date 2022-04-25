@@ -42,4 +42,19 @@ button {
 }
 
 // forms
+input, textarea {
+  border: none;
+  background-color: $secondary-accent;
+  width: 100%;
+  font-family: $body-font;
+  color: $primary;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 20px;
+  padding: 10px;
 
+  &:hover,
+  &:focus {
+    outline: 5px solid $primary-accent;
+  }
+}

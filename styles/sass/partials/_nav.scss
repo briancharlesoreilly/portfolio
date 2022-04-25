@@ -1,4 +1,98 @@
-// just hiding for now, while I get shit in order
+// hiding burger menu until media queries kick in
+.burger-menu-slide {
+  // display: none;
+
+  label {
+    cursor: pointer;
+
+    i {
+      color: $primary;
+      margin: 40px 0;
+    }
+  }
+
+  input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+
+    &:checked ~ .burger-slide-out {
+      left: 0;
+    }
+
+    &:focus + label {
+      border: 4px solid $primary-accent;
+    }
+  }
+
+  .burger-nav {
+    align-items: flex-start;
+  }
+
+  .burger-slide-out.active {
+    left: -500px;
+  }
+
+  .burger-slide-out {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    z-index: 20;
+    transition: 0.5s;
+
+    .close-button {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    button {
+      color: $primary;
+      background-color: transparent;
+      font-size: 4rem;
+      font-family: $heading-font;
+      padding: 10px;
+      border: 2px solid transparent;
+
+      &:active .burger-menu-slide .burger-slide-out {
+        left: -500px;
+        transition: 0.5s
+      }
+    }
+  }
+}
+
+.burger-slide-out {
+  background-color: $secondary-accent;
+  width: 310px;
+  border-radius: 20px;
+  border: 3px solid $primary;
+  margin: 0 10px;
+}
+
+.burger-nav {
+  flex-direction: column;
+
+  li {
+    margin: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: $primary;
+    font-family: $heading-font;
+    padding: 10px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $primary-accent;
+      border-radius: 20px;
+    }
+  }
+}
+
+
+
 .nav-bar {
   ul {
     display: flex;

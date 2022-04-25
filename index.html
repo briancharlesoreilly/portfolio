@@ -13,10 +13,31 @@
 </head>
 <body>
 
-  <!-- header START -->
-  <header> 
-    <div class="wrapper"> <!-- nav bar START -->
-      <nav class="nav-bar">
+  <header>   <!-- header START -->
+    <div class="wrapper"> 
+
+      <div class="burger-menu-slide"> <!-- burger menu START-->
+        <input type="checkbox" name="burger-menu" id="burger-menu" class="burger-menu-button">
+        <label for="burger-menu" class="burger-menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <div class="burger-slide-out">
+          <div class="close-button">
+            <button>x</button>
+          </div>
+          <nav>
+            <ul class="burger-nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div> <!-- burger menu END -->
+
+      <nav class="nav-bar"> <!-- nav bar START -->
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -191,51 +212,57 @@
       </div>
     </section> <!-- projects END -->
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact"> <!-- contact START -->
       <div class="wrapper">
         <h2>Contact Me</h2>
         <div class="contact-flex">
           
             <ul class="contact-info-flex">
               <li>
-                <i class="fa-solid fa-phone"></i>
-                <p>416 998 2473</p>
+                <a href="tel:4169982473">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>416 998 2473</p>
+                </a>
               </li>
               <li>
-                <i class="fa-solid fa-envelope"></i>
-                <p>briancharlesoreilly@gmail.com</p>
+                <a href="mailto:briancharlesoreilly@gmail.com">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>briancharlesoreilly @gmail.com</p>
+                </a>
               </li>
               <li>
-                <i class="fa-solid fa-location-dot"></i>
-                <p>West End Toronto, ON | Canada | M6J 2P6</p>
+                <a href="https://goo.gl/maps/rX5PmNr8XrCWL2AV9" target="_blank">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>West End Toronto, ON | Canada | M6J 2P6</p>
+                </a>
               </li>
             </ul>
 
           <form class="contact-form" action=""> <!-- form START --> 
             <ul class="flex-form">
               <li>
-                <label for="name">Name</label>
-                <input type="text" name="name" placeholder="Your Name">
+                <label for="name"></label>
+                <input type="text" name="name" placeholder="Your Name here!">
               </li>
 
               <li>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Your email address here!">
               </li>
 
               <li>
                 <label for="message"></label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here!"></textarea>
               </li>
 
               <li>
                 <button type="submit">Submit</button>
               </li>
             </ul>
-          </form> <!-- form START --> 
+          </form> <!-- form END --> 
         </div>
       </div>
-    </section>
+    </section> <!-- contact END -->
   </main> <!-- main END -->
   
   <footer> <!-- footer STARTS -->
