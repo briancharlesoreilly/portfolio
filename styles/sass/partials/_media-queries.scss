@@ -2,11 +2,11 @@
 //      TABLETS
 // *******************
 @media (max-width: 1024px) {
-  
+
 // overflow issue fix on mobile
-html, body {
-  overflow-x: hidden;
-}
+  html, body {
+    overflow-x: hidden;
+  }
 
 // ***** Header *****
 // ******************
@@ -36,23 +36,29 @@ html, body {
       }
     }
   }
+// ***** About  *****
+// ******************
+  .about-flex {
+    width: 100%;
+  }
+
+// ***** Skills *****
+// ******************
+
+// **** Projects ****
+// ******************
+  .projects-flex {
+    width: 100%;
+  }
+
 }
 
-// ***** Header *****
-// ******************
-
-// ***** Header *****
-// ******************
-
-// ***** Header *****
-// ******************
 
 // *******************
-//      MOBILE
+//     LARGE MOBILE
 // *******************
 @media (max-width: 768px) {
   // burger menu for mobile pops out
-
   .burger-menu-slide {
     display: block;
   }
@@ -62,7 +68,81 @@ html, body {
     display: none;
   }
 
+  // extending all wrappers
+  .wrapper {
+    width: 95%;
+  }
 
+// ***** Header *****
+// ******************
+  header {
+    .header-flex {
+      .header-left-box {
+        margin-bottom: 150px;
+
+        h1 {
+          font-size: 5rem;
+        }
+
+        .job-title {
+          font-size: 2.5rem;
+          padding: 5px 0;
+        }
+    
+      }
+    }
+  }
+
+// ***** About  *****
+// ******************
+  .about-flex {
+    flex-direction: column;
+
+    .about-left-box {
+      width: 100%;
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+
+    .about-right-box {
+      width: 100%;
+      padding: 10px;
+
+      .bio-button {
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+// ***** Skills *****
+// ******************
+
+// **** Projects ****
+// ******************
+
+// **** Contact *****
+// ******************
+
+
+}
+
+
+// *******************
+//     SMALL MOBILE
+// *******************
+@media (max-width: 450px) {
+  
+// ***** Skills *****
+// ******************
+
+// **** Projects ****
+// ******************
+
+// **** Contact *****
+// ******************
 
 
 }
