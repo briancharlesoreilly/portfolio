@@ -174,20 +174,25 @@
       li {
         display: flex;
 
+        a {
+          width: 70%;
+
+          &:hover,
+          &:focus {
+            outline: 5px solid $secondary-accent;
+          }
+        }
+
         .projects-box-text {
           width: 25%;
-          text-align: center;
+          text-align: left;
           margin: auto;
 
           h4 {
             font-family: $heading-font;
             color: $secondary-accent;
-            font-size: 3rem;
+            font-size: 4rem;
           }
-        }
-
-        img {
-          width: 70%;
         }
       }
     }
@@ -196,11 +201,43 @@
 // *******************
 //      CONTACT ME
 // *******************
+.contact {
+  background-color: $secondary;
+
+  h2 {
+    padding: 100px 0 50px 0;
+  }
+}
+
 .contact-flex {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  .contact-info-flex {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .contact-form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
 
   .flex-form {
     display: flex;
     flex-direction: column;
+    width: 80%;
+
+    li {
+      width: 80%;
+
+      input, textarea {
+        width: 100%;
+      }
+    }
   }
 }

@@ -260,7 +260,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -624,24 +624,58 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
+.projects .projects-flex .projects-bottom-box li a {
+  width: 70%;
+}
+.projects .projects-flex .projects-bottom-box li a:hover, .projects .projects-flex .projects-bottom-box li a:focus {
+  outline: 5px solid #FFD9DA;
+}
 .projects .projects-flex .projects-bottom-box li .projects-box-text {
   width: 25%;
-  text-align: center;
+  text-align: left;
   margin: auto;
 }
 .projects .projects-flex .projects-bottom-box li .projects-box-text h4 {
   font-family: "Sorts Mill Goudy";
   color: #FFD9DA;
-  font-size: 3rem;
+  font-size: 4rem;
 }
-.projects .projects-flex .projects-bottom-box li img {
-  width: 70%;
+
+.contact {
+  background-color: #171e28;
+}
+.contact h2 {
+  padding: 100px 0 50px 0;
 }
 
 .contact-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-flex .contact-info-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+}
+.contact-flex .contact-form {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .contact-flex .flex-form {
   display: -webkit-box;
@@ -651,4 +685,23 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 80%;
+}
+.contact-flex .flex-form li {
+  width: 80%;
+}
+.contact-flex .flex-form li input, .contact-flex .flex-form li textarea {
+  width: 100%;
+}
+
+footer {
+  background-color: #222a35;
+  text-align: center;
+  margin: 10px;
+}
+footer p {
+  color: #ececec;
+  padding: 8px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }

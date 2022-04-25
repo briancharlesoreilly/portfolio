@@ -1,0 +1,13 @@
+footer {
+  background-color: $primary;
+  text-align: center;
+  margin: 10px;
+  
+  p {
+    color: $primary-text;
+    padding: 8px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+  }
+}
