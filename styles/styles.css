@@ -322,6 +322,9 @@ input:hover, input:focus, textarea:hover, textarea:focus {
   outline: 5px solid #99E1D9;
 }
 
+.burger-menu-slide {
+  display: none;
+}
 .burger-menu-slide label {
   cursor: pointer;
 }
@@ -381,8 +384,8 @@ input:hover, input:focus, textarea:hover, textarea:focus {
   background-color: #FFD9DA;
   width: 310px;
   border-radius: 20px;
-  border: 3px solid #222a35;
-  margin: 0 10px;
+  border: 5px solid #222a35;
+  margin: 5px 10px;
 }
 
 .burger-nav {
@@ -777,4 +780,43 @@ footer p {
   padding: 8px;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  header .header-flex {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  header .header-flex .header-left-box {
+    text-align: center;
+    width: 100%;
+    background-color: #222a35;
+    border-radius: 20px;
+    margin-bottom: 70px;
+  }
+  header .header-flex .header-left-box h1 {
+    color: #FFD9DA;
+  }
+  header .header-flex .header-left-box .job-title {
+    width: 100%;
+    font-size: 3rem;
+    border: 3px solid #222a35;
+    border-radius: 20px;
+    background-color: #FFD9DA;
+    color: #222a35;
+  }
+}
+@media (max-width: 768px) {
+  .burger-menu-slide {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+  }
 }

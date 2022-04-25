@@ -2,13 +2,67 @@
 //      TABLETS
 // *******************
 @media (max-width: 1024px) {
-  // change stuff here
+  
+// overflow issue fix on mobile
+html, body {
+  overflow-x: hidden;
 }
 
+// ***** Header *****
+// ******************
+  header {
+    .header-flex {
+      align-items: flex-end;
+
+      .header-left-box {
+        text-align: center;
+        width: 100%;
+        background-color: $primary;
+        border-radius: 20px;
+        margin-bottom: 70px;
+
+        h1 {
+          color: $secondary-accent;
+        }
+
+        .job-title {
+          width: 100%;
+          font-size: 3rem;
+          border: 3px solid $primary;
+          border-radius: 20px;
+          background-color: $secondary-accent;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+// ***** Header *****
+// ******************
+
+// ***** Header *****
+// ******************
+
+// ***** Header *****
+// ******************
 
 // *******************
 //      MOBILE
 // *******************
 @media (max-width: 768px) {
-  // other stuff here
+  // burger menu for mobile pops out
+
+  .burger-menu-slide {
+    display: block;
+  }
+
+  // hiding regular nav menu
+  .nav-bar {
+    display: none;
+  }
+
+
+
+
 }
