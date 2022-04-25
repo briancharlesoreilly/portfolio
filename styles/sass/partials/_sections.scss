@@ -8,14 +8,12 @@
   }
 }
 
-.about-flex,
-.skills-flex {
+.about-flex {
   display: flex;
   margin: 0 auto;
   width: 80%;
 
-  .about-left-box,
-  .skills-left-box {
+  .about-left-box {
     width: 20%;
     text-align: center;
     margin-bottom: 100px;
@@ -25,8 +23,7 @@
     background-color: $secondary-accent;
     border-radius: 20px;
 
-    .about-box,
-    .skills-box {
+    .about-box {
       padding: 5px;
 
       &:hover,
@@ -50,8 +47,7 @@
     }
   }
 
-  .about-right-box,
-  .skills-right-box {
+  .about-right-box {
     width: 80%;
     padding: 0 50px 50px 50px;
 
@@ -113,12 +109,46 @@
     padding: 100px 0 50px 0;
   }
 
+  .wrapper {
+    padding-bottom: 150px;
+  }
+
   .skills-flex {
+    background-color: $secondary-accent;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+
     .skills-box {
+      text-align: center;
+      width: 30%;
+      padding: 25px;
+
+      i, p {
+        color: $primary;
+      }
+
+      i {
+        font-size: 6rem;
+      }
+
       &:hover,
       &:focus {
-        background-color: $secondary;
+        background-color: $primary-accent;
+        border-radius: 20px;
+        cursor: pointer;
       }
+
+      &:active {
+        background-color: $primary;
+
+        i, p {
+          color: $secondary-accent;
+        }
+      }
+
     }
   }
 

@@ -300,6 +300,7 @@ button {
 button:hover, button:focus {
   background-color: #FFD9DA;
   color: #222a35;
+  cursor: pointer;
 }
 button:active {
   background-color: #222a35;
@@ -390,18 +391,14 @@ header {
   color: #ececec;
 }
 
-.about-flex,
-.skills-flex {
+.about-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   width: 80%;
 }
-.about-flex .about-left-box,
-.about-flex .skills-left-box,
-.skills-flex .about-left-box,
-.skills-flex .skills-left-box {
+.about-flex .about-left-box {
   width: 20%;
   text-align: center;
   margin-bottom: 100px;
@@ -417,102 +414,32 @@ header {
   background-color: #FFD9DA;
   border-radius: 20px;
 }
-.about-flex .about-left-box .about-box,
-.about-flex .about-left-box .skills-box,
-.about-flex .skills-left-box .about-box,
-.about-flex .skills-left-box .skills-box,
-.skills-flex .about-left-box .about-box,
-.skills-flex .about-left-box .skills-box,
-.skills-flex .skills-left-box .about-box,
-.skills-flex .skills-left-box .skills-box {
+.about-flex .about-left-box .about-box {
   padding: 5px;
 }
-.about-flex .about-left-box .about-box:hover, .about-flex .about-left-box .about-box:focus,
-.about-flex .about-left-box .skills-box:hover,
-.about-flex .about-left-box .skills-box:focus,
-.about-flex .skills-left-box .about-box:hover,
-.about-flex .skills-left-box .about-box:focus,
-.about-flex .skills-left-box .skills-box:hover,
-.about-flex .skills-left-box .skills-box:focus,
-.skills-flex .about-left-box .about-box:hover,
-.skills-flex .about-left-box .about-box:focus,
-.skills-flex .about-left-box .skills-box:hover,
-.skills-flex .about-left-box .skills-box:focus,
-.skills-flex .skills-left-box .about-box:hover,
-.skills-flex .skills-left-box .about-box:focus,
-.skills-flex .skills-left-box .skills-box:hover,
-.skills-flex .skills-left-box .skills-box:focus {
+.about-flex .about-left-box .about-box:hover, .about-flex .about-left-box .about-box:focus {
   background-color: #222a35;
   cursor: pointer;
 }
-.about-flex .about-left-box .about-box:hover i, .about-flex .about-left-box .about-box:hover p, .about-flex .about-left-box .about-box:focus i, .about-flex .about-left-box .about-box:focus p,
-.about-flex .about-left-box .skills-box:hover i,
-.about-flex .about-left-box .skills-box:hover p,
-.about-flex .about-left-box .skills-box:focus i,
-.about-flex .about-left-box .skills-box:focus p,
-.about-flex .skills-left-box .about-box:hover i,
-.about-flex .skills-left-box .about-box:hover p,
-.about-flex .skills-left-box .about-box:focus i,
-.about-flex .skills-left-box .about-box:focus p,
-.about-flex .skills-left-box .skills-box:hover i,
-.about-flex .skills-left-box .skills-box:hover p,
-.about-flex .skills-left-box .skills-box:focus i,
-.about-flex .skills-left-box .skills-box:focus p,
-.skills-flex .about-left-box .about-box:hover i,
-.skills-flex .about-left-box .about-box:hover p,
-.skills-flex .about-left-box .about-box:focus i,
-.skills-flex .about-left-box .about-box:focus p,
-.skills-flex .about-left-box .skills-box:hover i,
-.skills-flex .about-left-box .skills-box:hover p,
-.skills-flex .about-left-box .skills-box:focus i,
-.skills-flex .about-left-box .skills-box:focus p,
-.skills-flex .skills-left-box .about-box:hover i,
-.skills-flex .skills-left-box .about-box:hover p,
-.skills-flex .skills-left-box .about-box:focus i,
-.skills-flex .skills-left-box .about-box:focus p,
-.skills-flex .skills-left-box .skills-box:hover i,
-.skills-flex .skills-left-box .skills-box:hover p,
-.skills-flex .skills-left-box .skills-box:focus i,
-.skills-flex .skills-left-box .skills-box:focus p {
+.about-flex .about-left-box .about-box:hover i, .about-flex .about-left-box .about-box:hover p, .about-flex .about-left-box .about-box:focus i, .about-flex .about-left-box .about-box:focus p {
   color: #FFD9DA;
 }
-.about-flex .about-left-box i, .about-flex .about-left-box p,
-.about-flex .skills-left-box i,
-.about-flex .skills-left-box p,
-.skills-flex .about-left-box i,
-.skills-flex .about-left-box p,
-.skills-flex .skills-left-box i,
-.skills-flex .skills-left-box p {
+.about-flex .about-left-box i, .about-flex .about-left-box p {
   color: #222a35;
 }
-.about-flex .about-left-box p,
-.about-flex .skills-left-box p,
-.skills-flex .about-left-box p,
-.skills-flex .skills-left-box p {
+.about-flex .about-left-box p {
   font-weight: 700;
   padding: 10px 0 0 0;
 }
-.about-flex .about-right-box,
-.about-flex .skills-right-box,
-.skills-flex .about-right-box,
-.skills-flex .skills-right-box {
+.about-flex .about-right-box {
   width: 80%;
   padding: 0 50px 50px 50px;
 }
-.about-flex .about-right-box .about-bio p:nth-child(3),
-.about-flex .skills-right-box .about-bio p:nth-child(3),
-.skills-flex .about-right-box .about-bio p:nth-child(3),
-.skills-flex .skills-right-box .about-bio p:nth-child(3) {
+.about-flex .about-right-box .about-bio p:nth-child(3) {
   padding: 40px 0;
 }
 .about-flex .about-right-box .bold-bio,
-.about-flex .about-right-box .bold-skills-bio,
-.about-flex .skills-right-box .bold-bio,
-.about-flex .skills-right-box .bold-skills-bio,
-.skills-flex .about-right-box .bold-bio,
-.skills-flex .about-right-box .bold-skills-bio,
-.skills-flex .skills-right-box .bold-bio,
-.skills-flex .skills-right-box .bold-skills-bio {
+.about-flex .about-right-box .bold-skills-bio {
   font-family: "Sorts Mill Goudy";
   font-size: 2rem;
   line-height: 1.25;
@@ -520,19 +447,13 @@ header {
   padding-bottom: 40px;
   color: #FFD9DA;
 }
-.about-flex .about-right-box .signature,
-.about-flex .skills-right-box .signature,
-.skills-flex .about-right-box .signature,
-.skills-flex .skills-right-box .signature {
+.about-flex .about-right-box .signature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 30px 0;
 }
-.about-flex .about-right-box .signature img,
-.about-flex .skills-right-box .signature img,
-.skills-flex .about-right-box .signature img,
-.skills-flex .skills-right-box .signature img {
+.about-flex .about-right-box .signature img {
   width: 30%;
 }
 
@@ -559,8 +480,43 @@ header {
 .skills h2 {
   padding: 100px 0 50px 0;
 }
+.skills .wrapper {
+  padding-bottom: 150px;
+}
+.skills .skills-flex {
+  background-color: #FFD9DA;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+.skills .skills-flex .skills-box {
+  text-align: center;
+  width: 30%;
+  padding: 25px;
+}
+.skills .skills-flex .skills-box i, .skills .skills-flex .skills-box p {
+  color: #222a35;
+}
+.skills .skills-flex .skills-box i {
+  font-size: 6rem;
+}
 .skills .skills-flex .skills-box:hover, .skills .skills-flex .skills-box:focus {
-  background-color: #171e28;
+  background-color: #99E1D9;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.skills .skills-flex .skills-box:active {
+  background-color: #222a35;
+}
+.skills .skills-flex .skills-box:active i, .skills .skills-flex .skills-box:active p {
+  color: #FFD9DA;
 }
 .skills button {
   margin-top: 40px;

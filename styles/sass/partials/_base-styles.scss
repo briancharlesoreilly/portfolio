@@ -32,6 +32,7 @@ button {
   &:focus {
     background-color: $secondary-accent;
     color: $primary;
+    cursor: pointer;
   }
 
   &:active {
