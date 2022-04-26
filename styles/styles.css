@@ -939,6 +939,9 @@ footer p {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+  header .header-flex .header-left-box {
+    margin-bottom: 200px;
+  }
   header .header-flex .header-left-box h1 {
     font-size: 2rem;
   }
