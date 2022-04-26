@@ -182,9 +182,9 @@
 
     .contact-info-flex {
       width: 100%;
-      flex-direction: row;
       justify-content: space-between;
       text-align: center;
+      align-items: center;
 
       a {
         p {
@@ -193,7 +193,7 @@
       }
 
       li {
-        width: 30%;
+        width: 80%;
       }
     }
 
