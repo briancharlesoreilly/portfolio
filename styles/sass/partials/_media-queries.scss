@@ -5,7 +5,7 @@
 
 // overflow issue fix on mobile
   html, body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
 // ***** Header *****
@@ -117,13 +117,50 @@
   .projects {
     .projects-flex {
       width: 100%;
-    }
 
+      .projects-bottom-box {
+        .projects-box {
+          flex-direction: column;
+          margin-bottom: 0;
+          
+          a {
+            width: 100%;
+          }
+
+          .projects-box-text {
+            padding: 30px 0 0 0;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 
 // **** Contact *****
 // ******************
+  .contact-flex {
+    width: 100%;
+    flex-direction: column;
 
+    .contact-info-flex {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+
+      a {
+        p {
+          padding: 10px;
+        }
+      }
+
+      li {
+        width: 30%;
+      }
+    }
+
+  }
 
 }
 

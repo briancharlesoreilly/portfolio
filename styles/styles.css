@@ -315,7 +315,7 @@ input, textarea {
   color: #222a35;
   font-size: 2rem;
   line-height: 2rem;
-  margin: 20px;
+  margin: 20px 0;
   padding: 10px;
 }
 input:hover, input:focus, textarea:hover, textarea:focus {
@@ -763,13 +763,6 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contact-flex .flex-form li {
-  width: 100%;
-}
-.contact-flex .flex-form li input, .contact-flex .flex-form li textarea {
-  width: 100%;
-}
-
 footer {
   background-color: #222a35;
   text-align: center;
@@ -784,7 +777,7 @@ footer p {
 
 @media (max-width: 1024px) {
   html, body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   header .header-flex {
@@ -867,5 +860,45 @@ footer p {
 
   .projects .projects-flex {
     width: 100%;
+  }
+  .projects .projects-flex .projects-bottom-box .projects-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .projects .projects-flex .projects-bottom-box .projects-box a {
+    width: 100%;
+  }
+  .projects .projects-flex .projects-bottom-box .projects-box .projects-box-text {
+    padding: 30px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-flex {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-flex .contact-info-flex {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .contact-flex .contact-info-flex a p {
+    padding: 10px;
+  }
+  .contact-flex .contact-info-flex li {
+    width: 30%;
   }
 }
