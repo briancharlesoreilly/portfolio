@@ -40,6 +40,14 @@
 // ******************
   .about-flex {
     width: 100%;
+
+    .about-right-box {
+      .signature {
+        img {
+          width: 50%;
+        }
+      }
+    }
   }
 
 // **** Projects ****
@@ -90,6 +98,11 @@
 
 // ***** About  *****
 // ******************
+  .about {
+    h2 {
+      font-size: 7rem;
+    }
+  }
   .about-flex {
     flex-direction: column;
 
@@ -112,9 +125,26 @@
     }
   }
 
+// ***** Skills *****
+// ******************
+  .skills {
+    .wrapper {
+      padding-bottom: 80px;
+    }
+
+    h2 {
+      font-size: 7rem;
+    }
+  }
+
 // **** Projects ****
 // ******************
   .projects {
+    h2 {
+      padding-top: 80px;
+      font-size: 7rem;
+    }
+
     .projects-flex {
       width: 100%;
 
@@ -139,6 +169,13 @@
 
 // **** Contact *****
 // ******************
+  .contact {
+    h2 {
+      font-size: 7rem;
+      padding-top: 80px;
+    }
+  }
+
   .contact-flex {
     width: 100%;
     flex-direction: column;
@@ -160,8 +197,11 @@
       }
     }
 
+    button {
+      width: 100%;
+      margin: 20px 0;
+    }
   }
-
 }
 
 
@@ -169,15 +209,90 @@
 //     SMALL MOBILE
 // *******************
 @media (max-width: 450px) {
+// ***** Header *****
+// ******************
+  header {
+    .burger-menu-slide {
+      label {
+        i {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .header-flex {
+      align-items: flex-start;
+
+      .header-left-box {
+        h1 {
+          font-size: 3rem;
+        }
+
+        .job-title {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+// ***** About  *****
+// ******************
+  .about {
+    h2 {
+      margin: 20px 0;
+      font-size: 5rem;
+      padding-top: 30px;
+    }
+
+    .about-flex {
+      .about-right-box {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .about-flex .about-right-box .signature {
+    margin-bottom: 0;
+
+    img {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
 
 // ***** Skills *****
 // ******************
+  .skills {
+    .wrapper {
+      padding-bottom: 40px;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-size: 5rem;
+      padding: 40px 0 30px 0;
+    }
+  }
 
 // **** Projects ****
 // ******************
+.projects {
+  h2 {
+    font-size: 5rem;
+    padding: 40px 0 30px 0;
+  }
+}
 
+.projects .projects-flex .projects-bottom-box {
+  margin-bottom: 30px;
+}
 // **** Contact *****
 // ******************
-
+  .contact {
+    h2 {
+      font-size: 5rem;
+      padding: 40px 0 30px 0;
+    }
+  }
 
 }

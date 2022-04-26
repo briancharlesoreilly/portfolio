@@ -728,10 +728,11 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20%;
+  width: 35%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding: 0 10px;
 }
 .contact-flex .contact-info-flex li {
   margin: 20px 0;
@@ -763,6 +764,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 footer {
   background-color: #222a35;
   text-align: center;
@@ -807,6 +809,9 @@ footer p {
   .about-flex {
     width: 100%;
   }
+  .about-flex .about-right-box .signature img {
+    width: 50%;
+  }
 
   .projects-flex {
     width: 100%;
@@ -836,6 +841,10 @@ footer p {
     padding: 5px 0;
   }
 
+  .about h2 {
+    font-size: 7rem;
+  }
+
   .about-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -858,6 +867,17 @@ footer p {
     width: 100%;
   }
 
+  .skills .wrapper {
+    padding-bottom: 80px;
+  }
+  .skills h2 {
+    font-size: 7rem;
+  }
+
+  .projects h2 {
+    padding-top: 80px;
+    font-size: 7rem;
+  }
   .projects .projects-flex {
     width: 100%;
   }
@@ -875,6 +895,11 @@ footer p {
     padding: 30px 0 0 0;
     text-align: center;
     width: 100%;
+  }
+
+  .contact h2 {
+    font-size: 7rem;
+    padding-top: 80px;
   }
 
   .contact-flex {
@@ -900,5 +925,65 @@ footer p {
   }
   .contact-flex .contact-info-flex li {
     width: 30%;
+  }
+  .contact-flex button {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 450px) {
+  header .burger-menu-slide label i {
+    margin-bottom: 0;
+  }
+  header .header-flex {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .header-flex .header-left-box h1 {
+    font-size: 3rem;
+  }
+  header .header-flex .header-left-box .job-title {
+    font-size: 1.6rem;
+  }
+
+  .about h2 {
+    margin: 20px 0;
+    font-size: 5rem;
+    padding-top: 30px;
+  }
+  .about .about-flex .about-right-box {
+    padding-bottom: 0;
+  }
+
+  .about-flex .about-right-box .signature {
+    margin-bottom: 0;
+  }
+  .about-flex .about-right-box .signature img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .skills .wrapper {
+    padding-bottom: 40px;
+  }
+  .skills h2 {
+    margin: 10px 0;
+    font-size: 5rem;
+    padding: 40px 0 30px 0;
+  }
+
+  .projects h2 {
+    font-size: 5rem;
+    padding: 40px 0 30px 0;
+  }
+
+  .projects .projects-flex .projects-bottom-box {
+    margin-bottom: 30px;
+  }
+
+  .contact h2 {
+    font-size: 5rem;
+    padding: 40px 0 30px 0;
   }
 }
