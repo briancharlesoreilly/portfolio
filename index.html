@@ -15,7 +15,6 @@
 
   <header>   <!-- header START -->
     <div class="wrapper"> 
-
       <div class="burger-menu-slide"> <!-- burger menu START-->
         <input type="checkbox" name="burger-menu" id="burger-menu" class="burger-menu-button">
         <label for="burger-menu" class="burger-menu-button">
@@ -43,8 +42,8 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </div> <!-- nav bar END -->
+      </nav> <!-- nav bar END -->
+    </div> 
 
     <div class="wrapper">
       <div class="header-flex">
@@ -55,7 +54,6 @@
       </div>
     </div> 
   </header>   <!-- header END -->
-
 
   <main>   <!-- main START -->
     <section class="about" id="about">     <!-- about section START -->
@@ -85,9 +83,9 @@
 
           <div class="about-right-box">
             <div class="about-bio">
-              <p class="bold-bio">See me up there putting my jacket on? I'm getting ready to GET TO WORK ... developing front end web applications using accessibility best practices and industry leading programming standards.</p>
-              <p>A creative at heart with solid leadership and managerial experience in the hospitality industry as a (former) small business owner. Classical training in solid wood cabinet making led to several years of bespoke furniture design and building, rounding out a lively and unique work history. Quick to learn, highly adaptable, with a penchant for forward thinking and novel technologies, such as immersion in developing web 3 technologies. Outside of work you'll find me obsessing over books and honing my backend skills (currently Python) and Ethereum/blockchain coding (Solidity).</p>
-              <p> Moxy? Check. Gumption!? You bet! Thesaurus? I own two. Verbose vernacular aside, I'm a whirling dervish of passion, imagination, and militant work ethic with an unending desire to learn more.</p>
+              <p class="bold-bio">See me up there putting my jacket on? I'm getting ready to <span class="highlight">GET TO WORK</span> ... developing front end web applications using <span class="highlight">accessibility best practices</span> and <span class="highlight">industry leading programming standards.</span></p>
+              <p>A creative at heart with solid leadership and managerial experience in the hospitality industry as a (former) small business owner. Classical training in cabinet making and several years of bespoke furniture design round out a lively and unique work history. I'm quick to learn & highly adaptable, with a penchant for forward thinking and novel technologies, such as immersion in developing web 3 technologies. Outside of work you'll find me obsessing over books and honing my backend skills (currently Python) and Ethereum/blockchain coding (Solidity).</p>
+              <p class="atoms"> Moxy? Check. Gumption!? You bet! Thesaurus? I own two. Verbose vernacular aside, I'm a whirling dervish of passion, imagination, and militant work ethic with an unending desire to learn more.</p>
 
             </div>
             <div class="bio-button">
@@ -182,7 +180,7 @@
                 <img src="./assets/images/e-commerce-screenshot.jpg" alt="screenshot of an e-commerce website">
               </a>
               <div class="projects-box-text">
-                <h4>Toys E-Commerce</h4>
+                <h4>Toys</h4>
                 <p>An E-commerce website for a fictional toy company</p>
               </div>
             </li>
@@ -201,7 +199,7 @@
     </section> <!-- projects END -->
 
     <section class="contact" id="contact"> <!-- contact START -->
-      <div class="wrapper">
+      <div class="wrapper"> <!-- contact wrapper START -->
         <h2>Contact Me</h2>
         <div class="contact-flex">
           
@@ -226,30 +224,28 @@
               </li>
             </ul>
 
-          <form class="contact-form" action="mailto:briancharlesoreilly@gmail.com" method="post" enctype="text/plain"> <!-- form START --> 
+          <form class="contact-form" action="https://formspree.io/f/xvolvkjo" method="POST"> <!-- form START --> 
             <ul class="flex-form">
               <li>
                 <label for="name"></label>
                 <input type="text" name="name" placeholder="Your Name here!">
               </li>
-
               <li>
                 <label for="email"></label>
                 <input type="email" name="email" id="email" placeholder="Your email address here!">
               </li>
-
               <li>
                 <label for="message"></label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here!"></textarea>
               </li>
-
               <li>
                 <button type="submit">Submit</button>
+                <p id="my-form-status"></p>
               </li>
             </ul>
           </form> <!-- form END --> 
         </div>
-      </div>
+      </div> <!-- contact wrapper END -->
     </section> <!-- contact END -->
   </main> <!-- main END -->
   

@@ -537,9 +537,6 @@ header {
   width: 80%;
   padding: 0 50px 50px 50px;
 }
-.about-flex .about-right-box .about-bio p:nth-child(3) {
-  padding: 40px 0;
-}
 .about-flex .about-right-box .bold-bio,
 .about-flex .about-right-box .bold-skills-bio {
   font-family: "Sorts Mill Goudy";
@@ -548,6 +545,10 @@ header {
   font-weight: 700;
   padding-bottom: 40px;
   color: #FFD9DA;
+}
+.about-flex .about-right-box .bold-bio .highlight,
+.about-flex .about-right-box .bold-skills-bio .highlight {
+  color: #FFD042;
 }
 .about-flex .about-right-box .signature {
   display: -webkit-box;
@@ -564,16 +565,12 @@ header {
 }
 
 .atoms {
+  margin: 30px 0;
+  padding: 5px;
+  border-radius: 10px;
   background-color: #FFD9DA;
   color: #222a35;
-  padding: 0 5px;
-  margin: 0 2px;
   text-decoration: none;
-}
-.atoms:hover, .atoms:focus {
-  outline: 1px solid #FFD9DA;
-  background-color: #222a35;
-  color: #ececec;
 }
 
 .skills {
@@ -691,8 +688,12 @@ header {
 }
 .projects .projects-flex .projects-bottom-box li .projects-box-text {
   width: 25%;
-  text-align: left;
+  text-align: right;
   margin: auto;
+}
+.projects .projects-flex .projects-bottom-box li .projects-box-text p {
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }
 .projects .projects-flex .projects-bottom-box li .projects-box-text h4 {
   font-family: "Sorts Mill Goudy";

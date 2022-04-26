@@ -51,12 +51,6 @@
     width: 80%;
     padding: 0 50px 50px 50px;
 
-    .about-bio {
-      p:nth-child(3) {
-        padding: 40px 0;
-      }
-    }
-
     .bold-bio,
     .bold-skills-bio {
       font-family: $heading-font;
@@ -65,6 +59,10 @@
       font-weight: 700;
       padding-bottom: 40px;
       color: $secondary-accent;
+
+      .highlight {
+        color: $tertiary-accent;
+      }
     }
 
     .signature {
@@ -77,9 +75,7 @@
     }
   }
 }
-// *******************
-//      ABOUT
-// *******************
+
 .about-box {
   a {
     text-decoration: none;
@@ -87,19 +83,14 @@
 }
 
 .atoms {
+  margin: 30px 0;
+  padding: 5px;
+  border-radius: 10px;
   background-color: $secondary-accent;
   color: $primary;
-  padding: 0 5px;
-  margin: 0 2px;
   text-decoration: none;
-
-  &:hover,
-  &:focus {
-    outline: 1px solid $secondary-accent;
-    background-color: $primary;
-    color: $primary-text;
-  }
 }
+
 // *******************
 //      SKILLS
 // *******************
@@ -216,8 +207,13 @@
 
         .projects-box-text {
           width: 25%;
-          text-align: left;
+          text-align: right;
           margin: auto;
+
+          p {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+          }
 
           h4 {
             font-family: $heading-font;
