@@ -282,9 +282,21 @@ p {
   margin: 0 auto;
 }
 
+h2 {
+  padding: 100px 0;
+  color: #ececec;
+  color: #FFD9DA;
+  -webkit-text-decoration: 2px underline #99E1D9;
+          text-decoration: 2px underline #99E1D9;
+}
+
+p {
+  color: #FFD9DA;
+}
+
 .fa-brands,
 .fa-solid {
-  color: #ececec;
+  color: #FFD9DA;
   font-size: 4rem;
 }
 
@@ -293,14 +305,19 @@ button {
   border: 1px solid #FFD9DA;
   border-radius: 5px;
   background-color: #222a35;
-  color: #ececec;
+  color: #FFD9DA;
   font-family: "Sorts Mill Goudy";
   font-size: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 button:hover, button:focus {
-  background-color: #FFD9DA;
+  background-color: #99E1D9;
+  border: 1px solid #99E1D9;
   color: #222a35;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 button:active {
   background-color: #222a35;
@@ -384,7 +401,7 @@ input:hover, input:focus, textarea:hover, textarea:focus {
   background-color: #FFD9DA;
   width: 310px;
   border-radius: 20px;
-  border: 5px solid #222a35;
+  border: 2px solid #222a35;
   margin: 5px 10px;
 }
 
@@ -403,10 +420,15 @@ input:hover, input:focus, textarea:hover, textarea:focus {
   color: #222a35;
   font-family: "Sorts Mill Goudy";
   padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .burger-nav a:hover, .burger-nav a:focus, .burger-nav a:active {
   background-color: #99E1D9;
-  border-radius: 20px;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .nav-bar ul {
@@ -488,17 +510,12 @@ header {
   padding: 10px 0;
 }
 
-.about h2 {
-  margin: 100px 0 50px 0;
-  color: #ececec;
-}
-
 .about-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 .about-flex .about-left-box {
   width: 20%;
@@ -518,13 +535,17 @@ header {
 }
 .about-flex .about-left-box .about-box {
   padding: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .about-flex .about-left-box .about-box:hover, .about-flex .about-left-box .about-box:focus {
-  background-color: #222a35;
+  background-color: #99E1D9;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .about-flex .about-left-box .about-box:hover i, .about-flex .about-left-box .about-box:hover p, .about-flex .about-left-box .about-box:focus i, .about-flex .about-left-box .about-box:focus p {
-  color: #FFD9DA;
+  color: #222a35;
 }
 .about-flex .about-left-box i, .about-flex .about-left-box p {
   color: #222a35;
@@ -535,7 +556,7 @@ header {
 }
 .about-flex .about-right-box {
   width: 80%;
-  padding: 0 50px 50px 50px;
+  padding: 0 0 50px 50px;
 }
 .about-flex .about-right-box .bold-bio,
 .about-flex .about-right-box .bold-skills-bio {
@@ -576,9 +597,6 @@ header {
   line-height: 1.25;
   font-weight: 700;
   color: #FFD9DA;
-}
-.projects h2 {
-  padding: 100px 0 50px 0;
 }
 .projects .projects-flex {
   display: -webkit-box;
@@ -630,9 +648,13 @@ header {
 }
 .projects .projects-flex .projects-bottom-box li a {
   width: 70%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .projects .projects-flex .projects-bottom-box li a:hover, .projects .projects-flex .projects-bottom-box li a:focus {
-  outline: 5px solid #FFD9DA;
+  outline: 5px solid #99E1D9;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .projects .projects-flex .projects-bottom-box li .projects-box-text {
   width: 25%;
@@ -645,14 +667,13 @@ header {
 .projects .projects-flex .projects-bottom-box li .projects-box-text h4 {
   font-family: "Sorts Mill Goudy";
   color: #FFD9DA;
+  -webkit-text-decoration: 1px underline #99E1D9;
+          text-decoration: 1px underline #99E1D9;
   font-size: 4rem;
 }
 
 .skills {
   background-color: #222a35;
-}
-.skills h2 {
-  padding: 100px 0 50px 0;
 }
 .skills .wrapper {
   padding-bottom: 150px;
@@ -674,6 +695,8 @@ header {
   text-align: center;
   width: 30%;
   padding: 25px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .skills .skills-flex .skills-box i, .skills .skills-flex .skills-box p {
   color: #222a35;
@@ -685,6 +708,8 @@ header {
   background-color: #99E1D9;
   border-radius: 20px;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .skills .skills-flex .skills-box:active {
   background-color: #222a35;
@@ -704,11 +729,8 @@ header {
 .contact {
   background-color: #171e28;
 }
-.contact h2 {
-  padding: 100px 0 50px 0;
-}
 .contact button {
-  margin: 20px;
+  margin: 0 0 20px 0;
 }
 
 .contact-flex {
@@ -736,7 +758,7 @@ header {
   padding: 0 10px;
 }
 .contact-flex .contact-info-flex li {
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 .contact-flex .contact-info-flex li p {
   padding: 10px 0;
@@ -768,6 +790,9 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.contact-flex .flex-form li:first-child input {
+  margin-top: 0;
+}
 
 footer {
   background-color: #222a35;
@@ -784,6 +809,10 @@ footer p {
 @media (max-width: 1024px) {
   html, body {
     overflow-x: hidden;
+  }
+
+  h2 {
+    padding: 50px 0;
   }
 
   header .header-flex {

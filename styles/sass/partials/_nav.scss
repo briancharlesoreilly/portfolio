@@ -64,7 +64,7 @@
   background-color: $secondary-accent;
   width: 310px;
   border-radius: 20px;
-  border: 5px solid $primary;
+  border: 2px solid $primary;
   margin: 5px 10px;
 }
 
@@ -81,12 +81,16 @@
     color: $primary;
     font-family: $heading-font;
     padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s;
+
 
     &:hover,
     &:focus,
     &:active {
       background-color: $primary-accent;
-      border-radius: 20px;
+      border-radius: 10px;
+      transition: all 0.2s;
     }
   }
 }

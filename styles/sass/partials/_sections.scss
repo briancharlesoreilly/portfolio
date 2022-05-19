@@ -1,17 +1,11 @@
 // *******************
 //  ABOUT ME & SKILLS
 // *******************
-.about {
-  h2 {
-    margin: 100px 0 50px 0;
-    color: $primary-text;
-  }
-}
 
 .about-flex {
   display: flex;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 
   .about-left-box {
     width: 20%;
@@ -25,14 +19,16 @@
 
     .about-box {
       padding: 5px;
+      transition: all 0.2s;
 
       &:hover,
       &:focus {
-        background-color: $primary;
+        background-color: $primary-accent;
         cursor: pointer;
+        transition: all 0.2s;
 
         i, p {
-          color: $secondary-accent;
+          color: $primary;
         }
       }
     }
@@ -49,7 +45,7 @@
 
   .about-right-box {
     width: 80%;
-    padding: 0 50px 50px 50px;
+    padding: 0 0 50px 50px;
 
     .bold-bio,
     .bold-skills-bio {
@@ -100,10 +96,6 @@
     color: $secondary-accent;
   }
 
-  h2 {
-    padding: 100px 0 50px 0;
-  }
-
   .projects-flex {
     display: flex;
     flex-direction: column;
@@ -132,10 +124,12 @@
 
         a {
           width: 70%;
+          transition: all 0.2s;
 
           &:hover,
           &:focus {
-            outline: 5px solid $secondary-accent;
+            outline: 5px solid $primary-accent;
+            transition: all 0.2s;
           }
         }
 
@@ -151,6 +145,7 @@
           h4 {
             font-family: $heading-font;
             color: $secondary-accent;
+            text-decoration: 1px underline $primary-accent;
             font-size: 4rem;
           }
         }
@@ -164,9 +159,6 @@
 // *******************
 .skills {
   background-color: $primary;
-  h2 {
-    padding: 100px 0 50px 0;
-  }
 
   .wrapper {
     padding-bottom: 150px;
@@ -184,6 +176,7 @@
       text-align: center;
       width: 30%;
       padding: 25px;
+      transition: all 0.2s;
 
       i, p {
         color: $primary;
@@ -198,6 +191,7 @@
         background-color: $primary-accent;
         border-radius: 20px;
         cursor: pointer;
+        transition: all 0.2s;
       }
 
       &:active {
@@ -228,12 +222,8 @@
 .contact {
   background-color: $secondary;
 
-  h2 {
-    padding: 100px 0 50px 0;
-  }
-
   button {
-    margin: 20px;
+    margin: 0 0 20px 0;
   }
 }
 
@@ -251,7 +241,7 @@
     padding: 0 10px;
 
     li {
-      margin: 20px 0;
+      margin: 0 0 20px 0;
 
       p {
         padding: 10px 0;
@@ -283,5 +273,10 @@
     display: flex;
     flex-direction: column;
 
+    li:first-child {
+      input {
+        margin-top: 0;
+      }
+    }
   }
 }
