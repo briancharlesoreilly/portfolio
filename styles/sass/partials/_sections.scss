@@ -73,6 +73,10 @@
         width: 30%;
       }
     }
+
+    .bio-button {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -82,20 +86,84 @@
   }
 }
 
-.atoms {
-  margin: 30px 0;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: $secondary-accent;
-  color: $primary;
-  text-decoration: none;
+// *******************
+//      PROJECTS
+// *******************
+.projects {
+  background-color: $secondary;
+
+  .bold-projects-bio {
+    font-family: $heading-font;
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: 700;
+    color: $secondary-accent;
+  }
+
+  h2 {
+    padding: 100px 0 50px 0;
+  }
+
+  .projects-flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+
+    .projects-top-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .projects-bottom-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 100px;
+
+      .projects-box {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 40px 0;
+      }
+
+      li {
+        display: flex;
+
+        a {
+          width: 70%;
+
+          &:hover,
+          &:focus {
+            outline: 5px solid $secondary-accent;
+          }
+        }
+
+        .projects-box-text {
+          width: 25%;
+          text-align: left;
+          margin: auto;
+
+          p {
+            font-size: 1.4rem;
+          }
+
+          h4 {
+            font-family: $heading-font;
+            color: $secondary-accent;
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 // *******************
 //      SKILLS
 // *******************
 .skills {
-  background-color: $secondary;
+  background-color: $primary;
   h2 {
     padding: 100px 0 50px 0;
   }
@@ -155,77 +223,6 @@
   }
 }
 // *******************
-//      PROJECTS
-// *******************
-.projects {
-  background-color: $primary;
-
-  .bold-projects-bio {
-    font-family: $heading-font;
-    font-size: 2rem;
-    line-height: 1.25;
-    font-weight: 700;
-    color: $secondary-accent;
-  }
-
-  h2 {
-    padding: 100px 0 50px 0;
-  }
-
-  .projects-flex {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 80%;
-
-    .projects-top-box {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .projects-bottom-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-bottom: 100px;
-
-      .projects-box {
-        margin: 40px 0;
-      }
-
-      li {
-        display: flex;
-
-        a {
-          width: 70%;
-
-          &:hover,
-          &:focus {
-            outline: 5px solid $secondary-accent;
-          }
-        }
-
-        .projects-box-text {
-          width: 25%;
-          text-align: right;
-          margin: auto;
-
-          p {
-            text-transform: uppercase;
-            font-size: 1.4rem;
-          }
-
-          h4 {
-            font-family: $heading-font;
-            color: $secondary-accent;
-            font-size: 4rem;
-          }
-        }
-      }
-    }
-  }
-}
-// *******************
 //      CONTACT ME
 // *******************
 .contact {
@@ -242,7 +239,7 @@
 
 .contact-flex {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
 
@@ -255,6 +252,10 @@
 
     li {
       margin: 20px 0;
+
+      p {
+        padding: 10px 0;
+      }
     }
 
     a {

@@ -559,22 +559,97 @@ header {
 .about-flex .about-right-box .signature img {
   width: 30%;
 }
+.about-flex .about-right-box .bio-button {
+  margin-top: 20px;
+}
 
 .about-box a {
   text-decoration: none;
 }
 
-.atoms {
-  margin: 30px 0;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: #FFD9DA;
-  color: #222a35;
-  text-decoration: none;
+.projects {
+  background-color: #171e28;
+}
+.projects .bold-projects-bio {
+  font-family: "Sorts Mill Goudy";
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #FFD9DA;
+}
+.projects h2 {
+  padding: 100px 0 50px 0;
+}
+.projects .projects-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+.projects .projects-flex .projects-top-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.projects .projects-flex .projects-bottom-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+.projects .projects-flex .projects-bottom-box .projects-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 40px 0;
+}
+.projects .projects-flex .projects-bottom-box li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects .projects-flex .projects-bottom-box li a {
+  width: 70%;
+}
+.projects .projects-flex .projects-bottom-box li a:hover, .projects .projects-flex .projects-bottom-box li a:focus {
+  outline: 5px solid #FFD9DA;
+}
+.projects .projects-flex .projects-bottom-box li .projects-box-text {
+  width: 25%;
+  text-align: left;
+  margin: auto;
+}
+.projects .projects-flex .projects-bottom-box li .projects-box-text p {
+  font-size: 1.4rem;
+}
+.projects .projects-flex .projects-bottom-box li .projects-box-text h4 {
+  font-family: "Sorts Mill Goudy";
+  color: #FFD9DA;
+  font-size: 4rem;
 }
 
 .skills {
-  background-color: #171e28;
+  background-color: #222a35;
 }
 .skills h2 {
   padding: 100px 0 50px 0;
@@ -626,81 +701,6 @@ header {
   color: #171e28;
 }
 
-.projects {
-  background-color: #222a35;
-}
-.projects .bold-projects-bio {
-  font-family: "Sorts Mill Goudy";
-  font-size: 2rem;
-  line-height: 1.25;
-  font-weight: 700;
-  color: #FFD9DA;
-}
-.projects h2 {
-  padding: 100px 0 50px 0;
-}
-.projects .projects-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto;
-  width: 80%;
-}
-.projects .projects-flex .projects-top-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.projects .projects-flex .projects-bottom-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 100px;
-}
-.projects .projects-flex .projects-bottom-box .projects-box {
-  margin: 40px 0;
-}
-.projects .projects-flex .projects-bottom-box li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.projects .projects-flex .projects-bottom-box li a {
-  width: 70%;
-}
-.projects .projects-flex .projects-bottom-box li a:hover, .projects .projects-flex .projects-bottom-box li a:focus {
-  outline: 5px solid #FFD9DA;
-}
-.projects .projects-flex .projects-bottom-box li .projects-box-text {
-  width: 25%;
-  text-align: right;
-  margin: auto;
-}
-.projects .projects-flex .projects-bottom-box li .projects-box-text p {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-}
-.projects .projects-flex .projects-bottom-box li .projects-box-text h4 {
-  font-family: "Sorts Mill Goudy";
-  color: #FFD9DA;
-  font-size: 4rem;
-}
-
 .contact {
   background-color: #171e28;
 }
@@ -715,7 +715,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -737,6 +737,9 @@ header {
 }
 .contact-flex .contact-info-flex li {
   margin: 20px 0;
+}
+.contact-flex .contact-info-flex li p {
+  padding: 10px 0;
 }
 .contact-flex .contact-info-flex a {
   text-decoration: none;
@@ -884,16 +887,16 @@ footer p {
   }
   .projects .projects-flex .projects-bottom-box .projects-box {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     margin-bottom: 0;
   }
   .projects .projects-flex .projects-bottom-box .projects-box a {
     width: 100%;
   }
   .projects .projects-flex .projects-bottom-box .projects-box .projects-box-text {
-    padding: 30px 0 0 0;
+    padding: 10px;
     text-align: center;
     width: 100%;
   }
