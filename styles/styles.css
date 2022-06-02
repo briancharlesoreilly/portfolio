@@ -571,15 +571,6 @@ header {
 .about-flex .about-right-box .bold-skills-bio .highlight {
   color: #FFD042;
 }
-.about-flex .about-right-box .signature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 30px 0;
-}
-.about-flex .about-right-box .signature img {
-  width: 30%;
-}
 .about-flex .about-right-box .bio-button {
   margin-top: 20px;
 }
