@@ -19,13 +19,14 @@
 
     .about-box {
       padding: 5px;
-      transition: all 0.2s;
+      // transition: all 0.2s;
 
       &:hover,
       &:focus {
         background-color: $primary-accent;
         cursor: pointer;
-        transition: all 0.2s;
+        // transition: all 0.2s;
+        border-radius: 20px;
 
         i, p {
           color: $primary;
