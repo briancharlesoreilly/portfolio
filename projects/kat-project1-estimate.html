@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woodworking Project Estimate - Project 1: Shelf Above Washer and Dryer + L-Shaped Floating Shelves</title>
     <style>
-        /* Base Styles */
+        /* Base Styles - Dark Mode Only */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            color: #333;
-            background-color: #f9f9f9;
+            color: #e0e0e0; /* Light text */
+            background-color: #121212; /* Dark background */
         }
         h1, h2, h3 {
-            color: #2c3e50;
+            color: #ffffff; /* White headers */
         }
         h1 {
             text-align: center;
             margin-bottom: 20px;
         }
         h2 {
-            border-bottom: 2px solid #ddd;
+            border-bottom: 2px solid #333; /* Darker border */
             padding-bottom: 10px;
             margin-top: 30px;
         }
@@ -40,15 +40,15 @@
             margin: 0 auto;
         }
         .estimate {
-            background-color: #ecf0f1;
+            background-color: #1e1e1e; /* Darker gray for sections */
             padding: 15px;
             border-radius: 5px;
             margin: 20px 0;
         }
         .questions {
-            background-color: #fff3cd;
+            background-color: #2c2c2c; /* Muted yellow alternative */
             padding: 15px;
-            border-left: 4px solid #ffc107;
+            border-left: 4px solid #ffc107; /* Keep accent */
         }
         /* Image Gallery */
         .image-gallery {
@@ -61,7 +61,7 @@
             width: 100%;
             height: auto;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Deeper shadow for dark mode */
         }
         /* Responsive Breakpoints */
         @media (max-width: 768px) {
@@ -90,11 +90,20 @@
                 min-height: 200px; /* Ensure visibility on small screens */
             }
         }
-        /* Print-friendly for sharing */
+        /* Print-friendly for sharing (overrides dark mode for print) */
         @media print {
             body {
                 background: white;
                 color: black;
+            }
+            h1, h2, h3 {
+                color: black;
+            }
+            .estimate {
+                background-color: #ecf0f1;
+            }
+            .questions {
+                background-color: #fff3cd;
             }
             a {
                 color: black;
@@ -133,9 +142,9 @@
         
         <p>Here's an idea of what this could look like:</p>
         <div class="image-gallery">
-            <img src="../assets/images/laundry-inspo1.jpg" alt="Wooden shelf above washer and dryer example 1" />
-            <img src="../assets/images/laundry-inspo2.jpg" alt="Wooden shelf above washer and dryer example 2" />
-            <img src="../assets/images/laundry-inspo3.jpg" alt="Wooden shelf above washer and dryer example 3" />
+            <img src="/assets/laundry-inspo1.jpg" alt="Wooden shelf above washer and dryer example 1" />
+            <img src="/assets/laundry-inspo2.jpg" alt="Wooden shelf above washer and dryer example 2" />
+            <img src="/assets/laundry-inspo3.jpg" alt="Wooden shelf above washer and dryer example 3" />
         </div>
 
         <div class="estimate">
@@ -168,9 +177,9 @@
         
         <p>Here's some visual inspiration:</p>
         <div class="image-gallery">
-            <img src="../assets/images/kitchen-inspo1.jpg" alt="L-shaped floating shelves in kitchen example 1" />
-            <img src="../assets/images/kitchen-inspo2.jpg" alt="L-shaped floating shelves in kitchen example 2" />
-            <img src="../assets/images/kitchen-inspo3.jpg" alt="L-shaped floating shelves in kitchen example 3" />
+            <img src="/assets/kitchen-inspo1.jpg" alt="L-shaped floating shelves in kitchen example 1" />
+            <img src="/assets/kitchen-inspo2.jpg" alt="L-shaped floating shelves in kitchen example 2" />
+            <img src="/assets/kitchen-inspo3.jpg" alt="L-shaped floating shelves in kitchen example 3" />
         </div>
 
         <div class="estimate">
@@ -200,11 +209,10 @@
         
         <p>This gets the ball rolling—simple, functional projects that showcase solid wood without overcomplicating. If they provide more details or photos, we can iterate. What do you think—any tweaks to materials or outsource the brackets?</p>
 
-        <!-- Include client photos if hosted; replace src with your paths e.g. https://www.briancharlesoreilly.com/images/kat_side_project_1.JPG -->
         <h3>Client Reference Photos</h3>
         <div class="image-gallery">
-            <img src="../assets/images/kat-project1-laundry-client.jpg" alt="Client photo 1: Laundry area" /> <!-- Replace with actual hosted URL -->
-            <img src="../assets/images/kat-project1-kitchen-client.jpg" alt="Client photo 2: Kitchen corner" /> <!-- Replace with actual hosted URL -->
+            <img src="/assets/laundry-client.jpg" alt="Client photo 1: Laundry area" />
+            <img src="/assets/kitchen-client.jpg" alt="Client photo 2: Kitchen corner" />
         </div>
     </div>
 
