@@ -45,3 +45,24 @@ p {
   font-family: $body-font;
   line-height: 1.6;
 }
+
+//secret shit
+.secret-link {
+  text-decoration: none; /* No underline */
+  color: inherit; /* Matches surrounding text color */
+  cursor: default; /* No pointer hand on hover—super sneaky */
+
+  &:hover,
+  &:active,
+  &:focus {
+      text-decoration: none; /* No changes on interaction */
+      color: inherit;
+  }
+
+  &:hover::after {
+      content: '🤫'; /* Optional: Shushing emoji hint on hover */
+      margin-left: 2px;
+  }
+}
+
+/* TEST: secret link styles are active */

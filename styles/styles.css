@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -211,8 +212,7 @@ template {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -250,6 +250,21 @@ p {
   line-height: 1.6;
 }
 
+.secret-link {
+  text-decoration: none; /* No underline */
+  color: inherit; /* Matches surrounding text color */
+  cursor: default; /* No pointer hand on hover—super sneaky */
+}
+.secret-link:hover, .secret-link:active, .secret-link:focus {
+  text-decoration: none; /* No changes on interaction */
+  color: inherit;
+}
+.secret-link:hover::after {
+  content: "🤫"; /* Optional: Shushing emoji hint on hover */
+  margin-left: 2px;
+}
+
+/* TEST: secret link styles are active */
 body {
   margin: 0;
   padding: 0;
