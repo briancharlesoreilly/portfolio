@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4ef">
+  <title>ICHIBAN — An assembly study · Brian Charles O’Reilly</title>
+  <meta name="description" content="An independent, interactive assembly and CNC machining study inspired by ICHIBAN. By Brian Charles O’Reilly, cabinetmaker and programmer.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e3442d'/%3E%3Cpath d='M8 9h16M8 16h16M8 23h16' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="identity" href="./" aria-label="ICHIBAN assembly study home"><span class="mark" aria-hidden="true">三</span><span>ICHIBAN<span class="identity-sub">AN ASSEMBLY STUDY</span></span></a>
+    <span class="edition">INDEPENDENT STUDY<br>NO. 001 / CANADA</span>
+    <button class="about-link" id="about-open">About this study <span aria-hidden="true">↗</span></button>
+  </header>
+  <main>
+    <div class="chapter-bar">
+      <nav aria-label="Study chapters" class="chapters">
+        <button id="assembly-tab" class="chapter active" aria-pressed="true"><span>01</span> Assembly</button>
+        <button id="machine-tab" class="chapter" aria-pressed="false"><span>02</span> CNC study</button>
+      </nav>
+      <span class="chapter-meta" id="chapter-meta">A MOTORCYCLE, PART BY PART</span>
+    </div>
+    <div class="workbook">
+      <section class="viewport" aria-label="Interactive 3D diagram">
+        <div class="scene-caption"><span id="figure-label">FIG. 00 / COMPLETE FORM</span><span class="concept-tag">CONCEPT MODEL</span></div>
+        <div id="scene" role="img" aria-label="Conceptual electric motorcycle in an isometric view. Drag to rotate; scroll or pinch to zoom."><div id="loading">Preparing the model…</div></div>
+        <div class="scene-tools" aria-label="Model view controls">
+          <button id="reset-view" title="Reset to isometric view" aria-label="Reset to isometric view">↺<span>Reset view</span></button>
+          <button id="explode" aria-pressed="false">↗<span>Explode</span></button>
+          <button id="paths" aria-pressed="true" hidden>⌁<span>Toolpaths</span></button>
+          <button id="focus-part" aria-pressed="false" hidden>⊕<span>Focus part</span></button>
+        </div>
+        <div class="view-key"><span class="red-line"></span><span id="view-key-text">CURRENT COMPONENT</span></div>
+        <span class="orbit-hint">DRAG TO ROTATE <span>·</span> PINCH TO ZOOM</span>
+        <div class="corner-index" aria-hidden="true" id="corner-index">00</div>
+      </section>
+      <section class="instruction" aria-labelledby="step-title">
+        <div class="step-kicker"><span id="step-count">OVERVIEW / 08 STEPS</span><span class="small-mark" aria-hidden="true">＋</span></div>
+        <div class="step-copy" aria-live="polite" aria-atomic="true">
+          <h1 id="step-title">The complete<br>form.</h1>
+          <p id="step-description">A quiet silhouette. A series of considered parts. Explore an imagined assembly inspired by ICHIBAN, then follow one motor component from billet to finished form.</p>
+        </div>
+        <div class="part-card"><span class="eyebrow" id="detail-label">THE IDEA</span><p id="detail-copy">Understand the whole by looking closely at how its parts come together.</p><button id="machine-focus" hidden>See this part being machined ↗</button></div>
+        <div id="cnc-controls" hidden>
+          <div class="playback"><button id="play" aria-label="Play machining animation">▶ <span>Play cut</span></button><span id="percent">0%</span></div>
+          <input id="scrubber" type="range" min="0" max="1000" value="0" aria-label="Machining operation progress">
+          <div class="path-legend"><span><i class="cut"></i>Cut</span><span><i class="rapid"></i>Retract / travel</span></div>
+        </div>
+        <p class="step-note" id="step-note">Exterior proportions are interpreted from public images. Internal layout and assembly order are imagined.</p>
+        <div class="step-navigation"><button id="previous" aria-label="Previous step" disabled>←</button><button id="next">Begin assembly <span aria-hidden="true">→</span></button></div>
+        <div class="step-dots" id="step-dots" aria-label="Choose an assembly step"></div>
+      </section>
+    </div>
+    <footer class="page-footer"><span>A STUDY BY <a href="https://www.briancharlesoreilly.com/" target="_blank" rel="noopener">BRIAN CHARLES O’REILLY ↗</a></span><span>CRAFT <i>×</i> COMPUTING <i>×</i> MANUFACTURING</span></footer>
+  </main>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <button class="dialog-close" id="about-close" aria-label="Close about this study">×</button>
+    <span class="eyebrow">CONTEXT / AUTHOR / SOURCES</span>
+    <h2 id="about-title">An invitation<br>to look closer.</h2>
+    <p>ICHIBAN’s pursuit of simplicity sparked a question: how could the same clarity carry through the way we explain, assemble and make a motorcycle?</p>
+    <p>This independent portfolio study explores that question through a schematic 3D assembly and a concept motor end cover. The white models and ink outlines borrow the clarity of architectural assembly diagrams.</p>
+    <h3>Brian Charles O’Reilly</h3>
+    <p>A cabinetmaker and programmer based in Canada, working with solid wood on a five-axis SCM morbidelli x400. Trained and certified in Mastercam 2D, 3D and multi-axis toolpath programming. Interested in where craftsmanship, computing and manufacturing meet.</p>
+    <p><a href="https://www.briancharlesoreilly.com/" target="_blank" rel="noopener">Portfolio ↗</a> &nbsp; <a href="https://www.linkedin.com/in/brian-charles-oreilly/" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+    <h3>What is known. What is imagined.</h3>
+    <p>ICHIBAN describes a Kanso-inspired electric motorcycle and a dual-motor system. No internal CAD, motor placement or manufacturing drawings were provided. The geometry, central motor arrangement, assembly order, aluminum component and machining sequence here are conceptual interpretations, not ICHIBAN engineering or an official assembly manual.</p>
+    <p>The CNC study uses two three-axis setups. Each operation shows a staged geometry snapshot; playback animates the tool, not material removal. These are representative paths, not exported Mastercam paths or machine-ready code. Production would require an engineered drawing, fixture and collision verification, and process validation on a suitable metal-cutting machine.</p>
+    <h3>Reference shelf</h3>
+    <ul class="sources">
+      <li><a href="https://www.ichiban.bike/" target="_blank" rel="noopener">ICHIBAN ↗</a><span>Public design and concept information</span></li>
+      <li><a href="https://www.skf.com/binaries/pub12/Images/0901d196802b0348-13459-EN-Rolling-bearings-and-seals-in-electric-motors-and-generators_tcm_12-134586.pdf" target="_blank" rel="noopener">SKF motor-bearing handbook ↗</a><span>Bearing support and motor structure</span></li>
+      <li><a href="https://www.mastercam.com/solutions/products/dynamic-motion/" target="_blank" rel="noopener">Mastercam Dynamic Motion ↗</a><span>Engagement-aware roughing principles</span></li>
+      <li><a href="https://www.haascnc.com/service/online-operator-s-manuals/mill-operator-s-manual/mill---part-setup.html" target="_blank" rel="noopener">Haas part setup ↗</a><span>Work offsets and locating the part</span></li>
+      <li><a href="https://www.haascnc.com/video/tipoftheday/0ppYjZ4So6c.html" target="_blank" rel="noopener">Haas soft-jaw workholding ↗</a><span>Locating a second operation</span></li>
+      <li><a href="https://videos.sandvik.coromant.com/tips-film-helical-interpolation-19" target="_blank" rel="noopener">Sandvik Coromant ↗</a><span>Helical interpolation</span></li>
+    </ul>
+    <p class="fine-print">Study assembled September 2026. Independent work; not affiliated with ICHIBAN or BIG. Motorcycle design belongs to its respective creators. Three.js is used under the MIT license.</p>
+  </dialog>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
